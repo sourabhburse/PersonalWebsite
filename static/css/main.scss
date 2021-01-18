@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', arial;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {width: 100%;}
+
+.nav-container {
+    background: #6700EE;
+
+    a {
+        color: white;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+    .logo {
+        color: #00F7FF;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    ul {
+        display: flex;
+        padding: 10px;
+
+        a {
+            display: block;
+            padding: 0 1em;
+        }
+    }
+
+}
+.social-header, .hero-design {
+    display: none;
+}
+
+.hero {
+    background: #6E00FF;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+}
+
+.meet {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    font-weight: bold;
+    color: #FF64CB;
+
+    span {
+        margin-top: 1em;
+        margin-right: .5em;
+    }
+}
+
+.scroll {
+    width: 30px;
+    margin-top: 2em;
+}
+
+@media only screen and (min-width: 1550px) {
+    header {
+        padding: 2em 2em 2em 20em;
+    }
+    .social-header {
+        padding: 2em 20em 2em 0;
+    }
+    section {
+        padding: 6em 20em 4em 20em;
+    }
+    .hero .content {
+        padding: 9em 20em 6em 20em;
+    }
+
+}
