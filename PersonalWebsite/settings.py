@@ -25,7 +25,7 @@ SECRET_KEY = '@$aof@c09$vcit(icx47$qmqy!d=qij=q0&us6q_imd^2_b0=q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

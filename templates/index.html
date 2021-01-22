@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sourabh Burse | Portfolio</title>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    {#    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">#}
     <link href="{% static 'css/aos.css' %}" rel="stylesheet">
 
 </head>
@@ -18,18 +18,18 @@
         <nav>
             <ul>
                 <li><a href="#">My work</a></li>
-                <li><a href="#">My skills</a></li>
+                <li><a href="#skills">My skills</a></li>
                 <li><a href="#">Hire me</a></li>
             </ul>
         </nav>
     </header>
     <div class="social-header">
-    <ul>
-        <li><a href="#"><img src="{% static 'img/facebook.png' %}" alt="dribbble"></a></li>
-        <li><a href="#"><img src="{% static 'img/facebook.png' %}" alt="behance"></a></li>
-        <li><a href="#"><img src="{% static 'img/facebook.png' %}" alt="twitter"></a></li>
-    </ul>
-</div>
+        <ul>
+            <li><a href="#"><img src="{% static 'img/facebook.png' %}" alt="dribbble"></a></li>
+            <li><a href="#"><img src="{% static 'img/github.png' %}" alt="behance"></a></li>
+            <li><a href="#"><img src="{% static 'img/twitter.png' %}" alt="twitter"></a></li>
+        </ul>
+    </div>
 
 </div>
 
@@ -58,97 +58,113 @@
 
 <section class="featured">
     <div class="left">
-        <div data-aos="fade-up" data-aos-duration="700" class="inner">
-            <p class="subtitle">Featured Project</p>
-            <a href="https://www.masterhomes.in" class="featured-title">Masterhomes.in</a>
+        <div class="resume" data-aos="fade-up-right" data-aos-duration="900">
+            <div data-aos="fade-up" data-aos-duration="700" class="inner">
+                <p class="featured-title">You will be happy to know that I have completed over 10+ projects
+                    successfully!</p>
+{#                <a href="https://www.masterhomes.in" class="resume-download">Download Resume</a>#}
 
-            <p class="featured-desc"> This project is a website developed for a Electronic Safe Dealer</p>
+                <a href="#" class="cta">
+                    <span>Download Resume</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
-    <img data-aos="fade-up" data-aos-duration="700" class="right" src="{% static 'img/masterhomes.png' %}"
-         alt="Featured Project">
+
 </section>
 
 <section class="skills">
-    <div class="skills-container">
+    <div id="#skills" class="skills-container">
         <div class="left">
             <div class="inner">
                 <h1>My Skills</h1>
             </div>
         </div>
         <ul>
-            <li data-aos="fade-up" data-aos-duration="1200">
+            <li data-aos="fade-up-right" data-aos-duration="1200">
                 <div class="icon-container one">
                     <img src="{% static 'img/svg/python.svg' %}" alt="Python">
                 </div>
 
                 <p class="skill-title">Python</p>
             </li>
-            <li data-aos="fade-up" data-aos-duration="1200">
+            <li data-aos="fade-up-right" data-aos-duration="1200">
                 <div class="icon-container one">
                     <img src="{% static 'img/svg/django.svg' %}" alt="Django">
                 </div>
                 <p class="skill-title">Django</p>
             </li>
-            <li data-aos="fade-up" data-aos-duration="1200">
+            <li data-aos="fade-up-right" data-aos-duration="1200">
                 <div class="icon-container two">
                     <img src="{% static 'img/svg/c.svg' %}" alt="C">
                 </div>
                 <p class="skill-title">C</p>
             </li>
-            <li data-aos="fade-up" data-aos-duration="1200">
+            <li data-aos="fade-up-right" data-aos-duration="1200">
                 <div class="icon-container two">
                     <img src="{% static 'img/svg/c-logo.svg' %}" alt="Cpp">
                 </div>
                 <p class="skill-title">C++</p>
             </li>
-            <li data-aos="fade-up" data-aos-duration="1200">
+            <li data-aos="fade-up-right" data-aos-duration="1200">
                 <div class="icon-container two">
                     <img src="{% static 'img/svg/html.png' %}" alt="HTML">
                 </div>
                 <p class="skill-title">HTML | CSS | JS</p>
             </li>
-            <li data-aos="fade-up" data-aos-duration="1200">
+            <li data-aos="fade-up-right" data-aos-duration="1200">
                 <div class="icon-container two">
                     <img src="{% static 'img/svg/mysql.svg' %}" alt="MySQL">
                 </div>
                 <p class="skill-title">MySql</p>
             </li>
-            <li data-aos="fade-up" data-aos-duration="1200">
+            <li data-aos="fade-up-right" data-aos-duration="1200">
                 <div class="icon-container two">
                     <img src="{% static 'img/svg/postgres.svg' %}" alt="NoSQL">
                 </div>
                 <p class="skill-title">Postgres</p>
             </li>
-            <li data-aos="fade-up" data-aos-duration="1200">
+            <li data-aos="fade-up-right" data-aos-duration="1200">
                 <div class="icon-container two">
                     <img id="anim" src="{% static 'img/svg/github.svg' %}" alt="Github">
                 </div>
                 <p class="skill-title">Git</p>
             </li>
-            <li data-aos="fade-up" data-aos-duration="1200">
+            <li data-aos="fade-up-right" data-aos-duration="1200">
                 <div class="icon-container two">
                     <img src="{% static 'img/svg/algorithm.svg' %}" alt="Algorithms">
                 </div>
                 <p class="skill-title">Algorithms</p>
             </li>
-            <li data-aos="fade-up" data-aos-duration="1200">
+            <li data-aos="fade-up-right" data-aos-duration="1200">
                 <div class="icon-container two">
                     <img src="{% static 'img/svg/problem-solving.svg' %}" alt="Problem Solving">
                 </div>
                 <p class="skill-title">Problem Solving</p>
             </li>
-            <li data-aos="fade-up" data-aos-duration="1200">
+            <li data-aos="fade-up-right" data-aos-duration="1200">
                 <div class="icon-container two">
                     <img src="{% static 'img/svg/technical-support.svg' %}" alt="AWS">
                 </div>
                 <p class="skill-title">AWS</p>
             </li>
-
-
         </ul>
     </div>
 </section>
+
+
+<section class="experience">
+    <div class="experience-container">
+       <ul><li>Niseva Technologies</li></ul>
+    </div>
+</section>
+
+
+
 
 <script src="{% static 'js/gsap.min.js' %}"></script>
 <script src="{% static 'js/ScrollTrigger.js' %}"></script>
